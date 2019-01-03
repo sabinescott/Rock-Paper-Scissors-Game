@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title> Rocks Paper Scissors</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+
+ 
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <div id="sizer">
+
+      <div id="swap-zone"><input id="username" placeholder="Name"/>
+        <button id="start">Start</button>
+      </div>
+
+      <div id="current-turn"><h2></h2></div>
+
+      <div id="game-div">
+
+        <div id="participant1">
+          <h3 id="participant1-name">Participant1</h3>
+          <ul>
+          </ul>
+          <div id="participant1-chosen"></div>
+          <div class="outcomes">
+            <div class="outcome-trackers" id="participant1-wins"></div>
+            <div class="outcome-trackers" id="participant1-losses"></div>
+          </div>
+        </div>
+
+        <div id="result"><h2></h2></div>
+
+        <div id="participant2">
+          <h3 id="participant2-name">Participant2</h3>
+          <ul>
+          </ul>
+          <div id="participant2-chosen"></div>
+          <div class="outcomes">
+            <div class="outcome-trackers" id="participant2-wins"></div>
+            <div class="outcome-trackers" id="participant2-losses"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="chat">
+        <div id="chat-messages"></div>
+        <div id="chat-bar">
+          <input id="chat-input" />
+          <button id="chat-send">Send</button>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="app.js"></script>
+
+  </body>
+
+</html>
