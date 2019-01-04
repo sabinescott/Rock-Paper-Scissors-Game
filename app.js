@@ -2,7 +2,7 @@
   var config = {
     apiKey: "AIzaSyAFHCpWfSxri1yfyddE9OqkpIBDt4EZskY",
     authDomain: "rock-paper-scissors-43a95.firebaseapp.com",
-    databaseURL: "https://rock-paper-scissors-43a95.firebaseio.com,
+    databaseURL: "https://rock-paper-scissors-43a95.firebaseio.com",
     storageBucket: "rock-paper-scissors-43a95.appspot.com"
   };
   
