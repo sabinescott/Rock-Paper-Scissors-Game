@@ -2,10 +2,8 @@
   var config = {
     apiKey: "AIzaSyAFHCpWfSxri1yfyddE9OqkpIBDt4EZskY",
     authDomain: "rock-paper-scissors-43a95.firebaseapp.com",
-    databaseURL: "https://rock-paper-scissors-43a95.firebaseio.com",
-    projectId: "rock-paper-scissors-43a95",
-    storageBucket: "rock-paper-scissors-43a95.appspot.com",
-    messagingSenderId: "221893496775"
+    databaseURL: "https://rock-paper-scissors-43a95.firebaseio.com,
+    storageBucket: "rock-paper-scissors-43a95.appspot.com"
   };
   
   firebase.initializeApp(config);
@@ -291,7 +289,7 @@ function gameLogic(participant1choice, participant2choice) {
       participantArchive
         .child("2")
         .child("wins")
-        .set(partipantAggregate2.wins + 1);
+        .set(participantAggregate2.wins + 1);
       participantArchives
         .child("1")
         .child("losses")
