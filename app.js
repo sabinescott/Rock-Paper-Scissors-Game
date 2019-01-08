@@ -270,7 +270,7 @@ function enterGame() {
 
 function gameLogic(participant1choice, participant2choice) {
   var participant1Victory = function() {
-    $("#result h2").text(participantAggregate1.name + " Wins!");
+    $("#result").text(participantAggregate1.name + " Wins!");
     if (participantCount === 1) {
       participantArchive
         .child("1")
@@ -284,7 +284,7 @@ function gameLogic(participant1choice, participant2choice) {
   };
 
   var participant2Victory = function() {
-    $("#result h2").text(participantAggregate2.name + " Wins!");
+    $("#result").text(participantAggregate2.name + " Wins!");
     if (participantCount === 2) {
       participantArchive
         .child("2")
@@ -298,7 +298,7 @@ function gameLogic(participant1choice, participant2choice) {
   };
 
   var draw = function() {
-    $("#result h2").text("It's a draw!");
+    $("#result").text("It's a draw!");
   };
 
   if (participant1choice === "Rock" && participant2choice === "Rock") {
