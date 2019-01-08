@@ -156,11 +156,11 @@ presentSourceArchive.on("value", function(snapshot) {
     if (presentSource === 1) {
       
       if (presentSource === participantCount) {
-        $("#current-turn h2").text("It's Your Turn!");
+        $("#present-source h2").text("It's Your Turn!");
         $("#participant" + participantCount + " ul").append("<li>Rock</li><li>Paper</li><li>Scissors</li>");
       } else {
         
-        $("#current-turn h2").text("Waiting for " + participantAggregate1.name + " to pick.");
+        $("#present-source h2").text("Waiting for " + participantAggregate1.name + " to pick.");
       }
 
       
@@ -173,7 +173,7 @@ presentSourceArchive.on("value", function(snapshot) {
         $("#participant" + participantCount + " ul").append("<li>Rock</li><li>Paper</li><li>Scissors</li>");
       } else {
         
-        $("#current-turn").text("Waiting for " + participantAggregate2.name + " to pick.");
+        $("#present-source").text("Waiting for " + participantAggregate2.name + " to pick.");
       }
 
       
@@ -205,9 +205,9 @@ presentSourceArchive.on("value", function(snapshot) {
      
       $("#participant1 ul").empty();
       $("#participant2 ul").empty();
-      $("#current-turn").html("<h2>Waiting for another participant to join.</h2>");
-      $("#participant2").css("border", "1px solid black");
-      $("#participant1").css("border", "1px solid black");
+      $("#present-source").html("<h2>Waiting for another participant to join the game....</h2>");
+      $("#participant2").css("border", "1px solid blue");
+      $("#participant1").css("border", "1px solid blue");
     }
   }
 });
