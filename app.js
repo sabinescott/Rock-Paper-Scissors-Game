@@ -88,7 +88,7 @@ $(document).on("click", "li", function() {
 
   
   $("#participant" + participantCount + " ul").empty();
-  $("#participant" + partipantCount + "picked").text(clickChoice);
+  $("#participant" + participantCount + "picked").text(clickChoice);
 
 
   presentSourceArchive.transaction(function(turn) {
